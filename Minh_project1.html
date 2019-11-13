@@ -1,0 +1,100 @@
+﻿<html>
+
+<head>
+    <title>Minh Project1</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="convertjson.js"></script>
+
+</head>
+    
+<!-- run initial every time the we page run -->
+<body onload="initial()">
+
+    <!-- year -->
+    <header>
+        <h2>Year:<select id="year" class="output"></h2>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        </select>
+        <!-- event handler -->
+        <input type="button" class="button" id="retrieve" value="Retrieve" onclick="retrieveMLBData();" />
+    
+        <!-- month -->
+        <h2>Month:<select id="month" class="output"></h2>
+        <option value="1">01</option>
+        <option value="2">02</option>
+        <option value="3">03</option>
+        <option value="4">04</option>
+        <option value="5">05</option>
+        <option value="6">06</option>
+        <option value="7">07</option>
+        <option value="8">08</option>
+        <option value="9">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        </select>
+
+        <!-- day -->
+        <h2>Day:<select id="day" class="output"></h2>
+        <option value="01">1</option>
+        <option value="02">2</option>
+        <option value="03">3</option>
+        <option value="04">4</option>
+        <option value="05">5</option>
+        <option value="06">6</option>
+        <option value="07">7</option>
+        <option value="08">8</option>
+        <option value="09">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        </select>
+        <nav>
+                    <!-- event handler -->
+                <input type="button" class="button" id="previousGame" value="Previous Game" onclick="previous();" />
+                <input type="button" class="button" id="nextGame" value="Next Game" onclick="next();" />
+            </nav>
+    </header>
+    <section>
+         <h2>Home Team Name</h2> 		<br /><br />
+         <input type="text" id="homeTeamName" class="output" />
+        <h2> Away Team Name</h2>		<br /><br /> 
+        <input type="text" id="awayTeamName" class="output" />
+        <h2>Winning Pitcher</h2> 		<br /><br />
+        <input type="text" id="winningPitcher" class="output" />
+        <h2>Losing Pitcher </h2>		<br /><br />
+        <input type="text" id="losingPitcher" class="output" />
+        <h2>Venue</h2> 		<br /><br />
+        <input type="text" id="venue" class="output" />
+    </section>
+    <footer>
+                <!-- nothing happen when click Save Changes button -->
+
+    <input type="button" class="button" id="saveChanges" value="Save Changes" />
+    </footer>
+
+
+</body>
+
+</html>
